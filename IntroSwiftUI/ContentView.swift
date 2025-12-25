@@ -115,7 +115,7 @@ struct ContentView: View {
                                     )
                                 }
                                 .frame(width: 110, height: 110)
-                                .cornerRadius(1)
+                                .cornerRadius(12)
                             }
 
                             Button(action: {
