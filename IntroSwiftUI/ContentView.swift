@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import UIKit
 
 struct ContentView: View {
 
@@ -64,6 +65,10 @@ struct ContentView: View {
 
     func reset() {
         print("resetting")
+        #if os(iOS)
+
+            UIImpactFeedbackGenerator(style: .heavy).impactOccurred()
+        #endif
         if isResetting == false {
             isResetting = true
             Task {
